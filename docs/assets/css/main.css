@@ -15,12 +15,6 @@ body {
   width: 100%;
 	}
 
-#header {
-		text-align: center;
-  }
-#header h1 {
-	font-size: 18vw;
-}
 .header {
   background-color: #e7977f;
   color: white;
