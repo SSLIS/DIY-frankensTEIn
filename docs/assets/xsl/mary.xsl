@@ -19,8 +19,8 @@
                     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
                     crossorigin="anonymous"/>
                 <!-- load the stylesheets in the assets/css folder, where you can modify the styling of your website -->
-                <link rel="stylesheet" href="../assets/css/main.css"/>
-                <link rel="stylesheet" href="../assets/css/desktop.css"/>
+                <link rel="stylesheet" href="assets/css/main.css"/>
+                <link rel="stylesheet" href="assets/css/desktop.css"/>
                 <!-- add additional css to overrule the (generic) bootstrap stylesheet -->
                 <style>
                     .Mary{
@@ -75,6 +75,20 @@
                         </div>
                     </div>
                 </main>
+                <footer>
+                <div class="row" id="footer">
+                  <div class="col-sm copyright">
+                      <div>
+                        <a href="https://creativecommons.org/licenses/by/4.0/legalcode">
+                          <img src="assets/img/cc.svg" class="copyright_logo" alt="Creative Commons License"/><img src="assets/img/by.svg" class="copyright_logo" alt="Attribution 4.0 International"/>
+                        </a>
+                      </div>
+                      <div>
+                         2022 Wout Dillen.
+                      </div>
+                    </div>
+                </div>
+                </footer>
             </body>
         </html>
     </xsl:template>
