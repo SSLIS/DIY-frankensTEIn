@@ -113,11 +113,11 @@
         </p>
     </xsl:template>
 
-    <!-- transform tei del into html strike -->
+    <!-- transform tei del into html del -->
     <xsl:template match="tei:del">
-        <strike>
+        <del>
             <xsl:apply-templates/>
-        </strike>
+        </del>
     </xsl:template>
 
     <!-- transform tei add into html sup -->

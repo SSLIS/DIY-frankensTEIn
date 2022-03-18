@@ -108,7 +108,7 @@
         </p>
     </xsl:template>
 
-    <!-- transform tei del into html strike -->
+    <!-- do not show del in toplayer transcription-->
     <xsl:template match="tei:del">
         <span style="display:none">
             <xsl:apply-templates/>
