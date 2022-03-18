@@ -196,11 +196,7 @@ a:hover {
 }
 
 h2 {
-	padding: 10px;
-	text-align: center;
-	border-bottom: 1px solid black;
-  margin-top: 10px;
-  margin-bottom: 20px;
+	font-size: 1.5vw;
 }
 
 h3 {

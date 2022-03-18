@@ -3,10 +3,10 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tei="http://www.tei-c.org/ns/1.0"
     xmlns:html="http://www.w3.org/1999/xhtml" exclude-result-prefixes="xs tei html" version="2.0">
     <xsl:output method="html"/>
-    
+
     <!-- transform the root element (TEI) into an HTML template -->
     <xsl:template match="tei:TEI">
-        <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text><xsl:text>&#xa;</xsl:text>      
+        <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text><xsl:text>&#xa;</xsl:text>
         <html lang="en" xml:lang="en">
             <head>
                 <title>
@@ -141,9 +141,9 @@
 
     <!-- we turn the tei head element (headline) into an html h1 element-->
     <xsl:template match="tei:head">
-        <h1>
+        <h2>
             <xsl:apply-templates/>
-        </h1>
+        </h2>
     </xsl:template>
 
     <!-- transform tei paragraphs into html paragraphs -->
