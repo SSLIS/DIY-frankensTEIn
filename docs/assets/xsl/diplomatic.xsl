@@ -100,7 +100,7 @@
     apply to the nodes nested within it.-->
 
     <!-- we turn the tei head element (headline) into an html h1 element-->
-    <xsl:2emplate match="tei:head">
+    <xsl:template match="tei:head">
         <h1>
             <xsl:apply-templates/>
         </h2>
