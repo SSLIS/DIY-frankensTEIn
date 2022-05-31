@@ -17,7 +17,7 @@
             <availability>
                <licence target="https://creativecommons.org/licenses/by-sa/4.0/">
                   <p>
-                     Original text authored by Mary Shelley (1816), and currently in the public domain. 
+                     Original text authored by Mary Shelley (1816), and currently in the public domain.
                      Transcription distributed under a CC-BY-SA 4.0 license.
                   </p>
                </licence>
@@ -35,9 +35,9 @@
                </msIdentifier>
                <msContents>
                   <summary>
-                     Bodleian MS. Abinger c.56 (formerly designated Dep. 477/1) consists of 62 leaves originally bound in Notebook A, 
-                     one of two now disbound notebooks in which Mary W. Shelley (MWS) drafted the two-volume version of Frankenstein. 
-                     The draft in c.56 runs from the beginning to the end of Volume I, concluding just as the Creature is about to 
+                     Bodleian MS. Abinger c.56 (formerly designated Dep. 477/1) consists of 62 leaves originally bound in Notebook A,
+                     one of two now disbound notebooks in which Mary W. Shelley (MWS) drafted the two-volume version of Frankenstein.
+                     The draft in c.56 runs from the beginning to the end of Volume I, concluding just as the Creature is about to
                      begin his tale to Victor.
                   </summary>
                   <textLang>English</textLang>
@@ -58,8 +58,8 @@
          <figure>
             <label>MS. Abinger c.56, f21r</label>
             <figDesc>
-               A scan of a handwritten document written by Mary Wollstonecraft Shelley. This scan depicts Folio 21r of Notebook A, one of 
-               two notebooks in which the author drafted the two-volume version of Frankenstein. This page in the notebook indicates the 
+               A scan of a handwritten document written by Mary Wollstonecraft Shelley. This scan depicts Folio 21r of Notebook A, one of
+               two notebooks in which the author drafted the two-volume version of Frankenstein. This page in the notebook indicates the
                start of the seventh chapter in this draft of the novel, where Victor Frankenstein beholds his completed creature for the first time.
             </figDesc>
             <graphic xml:id="f21r_full" url="https://iiif.bodleian.ox.ac.uk/iiif/image/5359a811-63e4-49d7-8cc1-e6b4308a7969/full/full/0/default.jpg"/>
@@ -76,10 +76,10 @@
             <head>
                Chapter 7<hi rend="sup"><hi rend="u">th</hi></hi>
             </head>
-            <p> 
+            <p>
                <lb/>It was on a dreary night of November
                <lb/>that I beheld <del type="strikethrough" hand="#PBS">
-                  <add place="above" hand="#PBS">the frame on whic</add></del> 
+                  <add place="above" hand="#PBS">the frame on whic</add></del>
                my man comple<del type="overwritten" hand="#PBS">te</del><add place="overwritten" hand="#PBS">ated</add><del type="overwritten" hand="#PBS">.</del><add place="overwritten" hand="#PBS">,</add>
                <del type="strikethrough" hand="#PBS">And</del>
                <lb/>with an anxiety that almost amount<lb rend="split"/>ed to agony I collected instruments of life
@@ -114,7 +114,7 @@
                <lb/><del type="strikethrough" hand="#MSW">handsome</del>
                <del type="strikethrough" hand="#PBS"><add place="margin"
                   hand="#MSW">handsome</add></del>
-               <add type="above" hand="#PBS">beautiful</add>. 
+               <add type="above" hand="#PBS">beautiful</add>.
                <del type="strikethrough" hand="#PBS">Handsome</del>
                <add place="above" hand="#PBS">Beautiful</add>; Great God! His
                <lb/><del type="strikethrough" hand="#MSW">dun</del>
@@ -125,9 +125,9 @@
                   &amp;</add> flowing and his teeth of a pearly white<lb rend="split"/>ness but these
                luxurianc<add place="intralinear" hand="#MS" rend="blackink" resp="#WD">i</add>es
                only <del type="crossedOut" hand="#MS" rend="blackink" resp="#WD">fomed</del>
-               <lb/>formed a more horrid contrast with his watry eyes that seemed almost of 
-               <lb/>the same colour as the dun white 
-               <lb/>sockets in which they were set, 
+               <lb/>formed a more horrid contrast with his watry eyes that seemed almost of
+               <lb/>the same colour as the dun white
+               <lb/>sockets in which they were set,
             </p>
          </div>
       </body>
