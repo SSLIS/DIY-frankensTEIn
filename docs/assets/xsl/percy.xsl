@@ -35,7 +35,7 @@
             <body>
                 <header>
                     <h1>
-                        <xsl:apply-templates select="//tei:TEI//tei:title"/>
+                        <xsl:apply-templates select="//tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
                     </h1>
                 </header>
                 <nav id="sitenav">
