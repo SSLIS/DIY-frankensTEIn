@@ -1,5 +1,6 @@
-# DIY frankensTEIn
 [![DOI](https://zenodo.org/badge/471181054.svg)](https://zenodo.org/badge/latestdoi/471181054)
+
+# DIY frankensTEIn
 
 🚀 [Visit the Website](https://sslis.github.io/DIY-frankensTEIn/) 🚀
 
