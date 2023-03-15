@@ -26,7 +26,7 @@
             <body>
                 <header>
                     <h1>
-                        <xsl:apply-templates select="//tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
+                        <xsl:apply-templates select="//tei:titleStmt/tei:title"/>
                     </h1>
                 </header>
                 <nav id="sitenav">
@@ -43,26 +43,26 @@
                     <!-- define a row layout with bootstrap's css classes (two columns) -->
                         <div class="row">
                             <!-- first column: load the image based on the IIIF link in the graphic above -->
-                            <div class="col-sm" style="display:flex;">
-                               <xsl:for-each select="//tei:surface">
-                               <article id="thumbnail">
-                                <img style="padding:5px">
-                                    <xsl:attribute name="src">
-                                        <xsl:value-of select="tei:figure/tei:graphic[2]/@url"/>
-                                    </xsl:attribute>
-                                    <xsl:attribute name="title">
-                                        <xsl:value-of select="tei:figure/tei:label"/>
-                                    </xsl:attribute>
-                                    <xsl:attribute name="alt">
-                                        <xsl:value-of select="tei:figure/tei:figDesc"/>
-                                    </xsl:attribute>
-                                </img>
-                               </article>
-                               </xsl:for-each>
+                            <div class="col-sm">
+                                <article id="collection">
+                                    <xsl:for-each select="//tei:surface">
+                                     <img class="thumbnail">
+                                         <xsl:attribute name="src">
+                                             <xsl:value-of select="tei:figure/tei:graphic[2]/@url"/>
+                                         </xsl:attribute>
+                                         <xsl:attribute name="title">
+                                             <xsl:value-of select="tei:figure/tei:label"/>
+                                         </xsl:attribute>
+                                         <xsl:attribute name="alt">
+                                             <xsl:value-of select="tei:figure/tei:figDesc"/>
+                                         </xsl:attribute>
+                                     </img>                              
+                                    </xsl:for-each>
+                                </article>
                             </div>
                             <!-- second column: apply matching templates for anything nested underneath the tei:text element -->
                             <div class="col-sm">
-                                <article id="transcription">
+                                <article id="description">
                                   <p>
                                     <strong>Description:</strong> &#160;
                                       <a>
@@ -148,7 +148,7 @@
     <xsl:template match="tei:lb">
         <br/>
     </xsl:template>
-    <!-- not: in the previous template there is no <xsl:apply-templates/>. This is because there is nothing to
+    <!-- note: in the previous template there is no <xsl:apply-templates/>. This is because there is nothing to
     process underneath (nested in) tei lb's. Therefore the XSLT processor does not need to look for templates to
     apply to the nodes nested within it.-->
 

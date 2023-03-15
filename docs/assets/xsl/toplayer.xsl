@@ -26,7 +26,7 @@
             <body>
                 <header>
                     <h1>
-                        <xsl:apply-templates select="//tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
+                        <xsl:apply-templates select="//tei:titleStmt/tei:title"/>
                     </h1>
                 </header>
                 <nav id="sitenav">
@@ -58,7 +58,7 @@
                                 <div class="col-">
                                     <article class="thumbnail">
                                         <!-- make an HTML <img> element, with a maximum width of 100 pixels -->
-                                        <img width="100">
+                                        <img">
                                             <!-- give this HTML <img> attribute three more attributes:
                                                     @src to locate the image file
                                                     @title for a mouse-over effect

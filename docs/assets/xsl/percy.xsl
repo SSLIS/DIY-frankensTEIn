@@ -35,7 +35,7 @@
             <body>
                 <header>
                     <h1>
-                        <xsl:apply-templates select="//tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
+                        <xsl:apply-templates select="//tei:titleStmt/tei:title"/>
                     </h1>
                 </header>
                 <nav id="sitenav">
@@ -66,10 +66,10 @@
                             <xsl:variable name="facs" select="@facs"/>
                             <div class="row">
                                 <!-- fill the first column with this page's image -->
-                                <div class="col-sm">
-                                    <article class="scan">
+                                <div>
+                                    <article>
                                         <!-- make an HTML <img> element, with a maximum width of 400 pixels -->
-                                        <img width="400">
+                                        <img class="img-full">
                                             <!-- give this HTML <img> attribute three more attributes:
                                                     @src to locate the image file
                                                     @title for a mouse-over effect
