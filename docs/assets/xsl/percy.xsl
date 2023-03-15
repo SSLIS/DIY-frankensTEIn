@@ -212,5 +212,18 @@
             </span>
         </strike>
     </xsl:template>
+    
+    <!-- give all metamarks with a @place a class of the same name in the html-->
+    <!-- out of the box, the css of this template has classes for 'top-left' and 'top-right' values for metamark[@place]. You can change them in `main.css` if you need to.-->
+    <!-- if you want to use other values, be sure to also make corresponding class descriptions in your `main.css` stylesheet. -->
+    <xsl:template match="tei:metamark[@place]">
+        <span>
+            <xsl:attribute name="class">
+                <xsl:value-of select="@place"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template> 
+
 
 </xsl:stylesheet>

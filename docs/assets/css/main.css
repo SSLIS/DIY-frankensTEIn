@@ -221,3 +221,14 @@ img {
   	color: black;
 	text-align: center;
 }
+
+.top-left {
+    float: left;
+    position:absolute;
+    left:-10px;
+}
+.top-right {
+    float: right;
+    position:relative;
+    right:10px;
+}
