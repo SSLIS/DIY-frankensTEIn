@@ -66,7 +66,7 @@
                             <xsl:variable name="facs" select="@facs"/>
                             <div class="row">
                                 <!-- fill the first column with this page's image -->
-                                <div>
+                                <div class="col-sm">
                                     <article>
                                         <!-- make an HTML <img> element, with a maximum width of 400 pixels -->
                                         <img class="img-full">
