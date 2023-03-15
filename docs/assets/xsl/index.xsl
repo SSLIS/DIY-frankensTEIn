@@ -43,27 +43,37 @@
                     <!-- define a row layout with bootstrap's css classes (two columns) -->
                         <div class="row">
                             <!-- first column: load the image based on the IIIF link in the graphic above -->
-                            <div class="col-sm">
+                            <div class="col-sm" style="display:flex;">
+                               <xsl:for-each select="//tei:surface">
                                <article id="thumbnail">
-                                <img>
+                                <img style="padding:5px">
                                     <xsl:attribute name="src">
-                                        <xsl:value-of select="//tei:facsimile/tei:surface//tei:graphic[@xml:id='f21r_thumb']/@url"/>
+                                        <xsl:value-of select="tei:figure/tei:graphic[2]/@url"/>
                                     </xsl:attribute>
                                     <xsl:attribute name="title">
-                                        <xsl:value-of select="//tei:facsimile/tei:surface[@xml:id='f21r']//tei:label"/>
+                                        <xsl:value-of select="tei:figure/tei:label"/>
                                     </xsl:attribute>
                                     <xsl:attribute name="alt">
-                                        <xsl:value-of select="//tei:facsimile/tei:surface[@xml:id='f21r']//tei:figDesc"/>
+                                        <xsl:value-of select="tei:figure/tei:figDesc"/>
                                     </xsl:attribute>
                                 </img>
                                </article>
+                               </xsl:for-each>
                             </div>
                             <!-- second column: apply matching templates for anything nested underneath the tei:text element -->
                             <div class="col-sm">
                                 <article id="transcription">
                                   <p>
-                                    <strong>Description:</strong>
-                                    <xsl:apply-templates select="//tei:TEI//tei:figDesc"/>
+                                    <strong>Description:</strong> &#160;
+                                      <a>
+                                          <xsl:attribute name="href">
+                                              <xsl:value-of select="//tei:sourceDesc/tei:idno/@url"/>
+                                          </xsl:attribute>
+                                          <xsl:apply-templates select="//tei:sourceDesc//tei:msName"/>
+                                      </a>
+                                  </p>    
+                                  <p>
+                                    <xsl:apply-templates select="//tei:sourceDesc//tei:summary"/>
                                   </p>
                                 </article>
                             </div>
@@ -73,15 +83,15 @@
                                     <article id="details">
                                       <p>
                                         <strong>Author:</strong><br/>
-                                        <xsl:apply-templates select="//tei:TEI//tei:author"/>
+                                        <xsl:apply-templates select="//tei:titleStmt/tei:author"/>
                                       </p>
                                       <p>
                                         <strong>Modifications by:</strong><br/>
-                                        <xsl:apply-templates select="//tei:TEI//tei:editor"/>
+                                        <xsl:apply-templates select="//tei:titleStmt/tei:editor"/>
                                       </p>
                                       <p>
                                         <strong>Transcription by:</strong><br/>
-                                        <xsl:apply-templates select="//tei:TEI//tei:principal"/>
+                                        <xsl:apply-templates select="//tei:titleStmt/tei:principal"/>
                                       </p>
                                       <p>
                                         <strong>Based on the work of:</strong><br/>
@@ -90,16 +100,16 @@
                                       <p>
                                           <strong>Holding Library:</strong><br/>
                                           <a href="https://www.bodleian.ox.ac.uk/home">
-                                              <xsl:apply-templates select="//tei:TEI//tei:msIdentifier/tei:institution"/>
+                                              <xsl:apply-templates select="//tei:sourceDesc/tei:msDesc/tei:msIdentifier/tei:institution"/>
                                           </a>
                                       </p>
                                       <p>
                                         <strong>Manuscript:</strong><br/>
                                         <a>
                                           <xsl:attribute name="href">
-                                              <xsl:value-of select="//tei:TEI/tei:idno"/>
+                                              <xsl:value-of select="//tei:sourceDesc/tei:idno"/>
                                           </xsl:attribute>
-                                          <xsl:apply-templates select="//tei:TEI//tei:msName"/>
+                                          <xsl:apply-templates select="//tei:sourceDesc//tei:msName"/>
                                         </a>
                                       </p>
                                     </article>
