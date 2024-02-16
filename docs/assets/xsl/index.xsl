@@ -67,7 +67,7 @@
                                     <strong>Description:</strong> &#160;
                                       <a>
                                           <xsl:attribute name="href">
-                                              <xsl:value-of select="//tei:sourceDesc/tei:idno/@url"/>
+                                              <xsl:apply-templates select="//tei:sourceDesc//tei:idno"/>
                                           </xsl:attribute>
                                           <xsl:apply-templates select="//tei:sourceDesc//tei:msName"/>
                                       </a>
@@ -107,7 +107,7 @@
                                         <strong>Manuscript:</strong><br/>
                                         <a>
                                           <xsl:attribute name="href">
-                                              <xsl:value-of select="//tei:sourceDesc/tei:idno"/>
+                                              <xsl:apply-templates select="//tei:sourceDesc//tei:idno"/>
                                           </xsl:attribute>
                                           <xsl:apply-templates select="//tei:sourceDesc//tei:msName"/>
                                         </a>
